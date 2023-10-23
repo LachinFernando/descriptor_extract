@@ -43,5 +43,12 @@ if smile:
             st.header("Extracted Descriptors")
             # set descriptors
             st.json(descriptor_dict)
+
+tab1, tab2 = st.tabs(["Explanation", "Prediction"])
+
+with tab1:
+    st.subheader("Explanation on Descriptors")
+    with st.expander("What are Descriptors?"):
+        st.write("Molecular descriptors, also known as chemical descriptors or molecular fingerprints, are numerical or binary representations of the chemical and structural characteristics of molecules. These descriptors are used in cheminformatics and computational chemistry to quantitatively describe various properties of chemical compounds. Molecular descriptors can provide valuable information for tasks such as compound screening, drug design, property prediction, and similarity analysis.")
     
 

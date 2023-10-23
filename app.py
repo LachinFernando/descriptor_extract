@@ -35,7 +35,7 @@ st.image(IMG_ADDRESS, caption = "Molecular Descriptors")
 smile = st.text_input("Enter the Canonical Smile Notation")
 
 if smile:
-    with st.spinner("Extracting Descriptors..."):
+    with st.spinner("Extracting Descriptors.."):
         descriptor_dict = extract_descriptors(smile)
         #st.dataframe(pd.DataFrame(descriptor_dict, index=[0]))
         with st.sidebar:
